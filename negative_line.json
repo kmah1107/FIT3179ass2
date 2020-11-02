@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Google's stock price over time.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/kmah1107/FIT3179ass2/main/testingdetail.csv"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "month", "sort": [""]},
+    "y": {"aggregate": "sum", "field": "Negative", "type": "quantitative"}
+  },
+  "config": {}
+}
