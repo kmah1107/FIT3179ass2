@@ -1,0 +1,18 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Total Samples collected in each State",
+  "height": {"step": 17},
+  "data": {
+    "url": "https://raw.githubusercontent.com/kmah1107/FIT3179ass2/main/testingdetail.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "TotalSamples",
+      "title": "Total Samples"
+    },
+    "x": {"field": "State", "title": "State"}
+  },
+  "config": {}
+}
